@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BasikFit | www.basikfit.com</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="main w-full h-full">
+
+
+        <header class="text-gray-600 body-font sm:px-10 p-2">
+            <div
+                class="container mx-auto flex flex-wrap p-5 md:flex-col flex-row justify-between lg:flex-row items-center relative">
+                <a class="flex title-font font-medium items-center  text-gray-900 mb-4 md:mb-10 lg:mb-0">
+                    <img src="./img/logo.png" alt="Logo.png" class="h-10 border-2 border-dotted border-black">
+                </a>
+                <nav class="md:ml-auto md:flex flex-wrap items-center text-base justify-center  gap-5 hidden  ">
+                    <a class="mr-5 text-gray-900">HOME</a>
+                    <a class="mr-5 text-sky-400">SHOP</a>
+                    <a class="mr-5 text-sky-400">MY ACCOUNT</a>
+                    <a class="mr-5 text-sky-400">ABOUT</a>
+                    <a class="mr-5 text-sky-400">CONTACT</a>
+                    <a class="mr-5 text-sky-400"><b>$0.0</b> <i class="fa-solid fa-bag-shopping ml-3 relative"><span class="text-xs absolute -top-4 -right-4 text-black bg-sky-400 p-[5px] rounded-full">0</span></i></a>
+                </nav>
+              
+
+                <button  id="btn1" style="display: block;"
+                    class="absolute  right-0 top-0 inline-flex items-center md:opacity-0   bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onclick="menuBar()">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+
+                <button id="btn2" style="display: none;"
+                    class="absolute  right-0 top-0 inline-flex items-center md:hidden bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onclick="menuBar()">
+                    <i class="fa-solid fa-x text-2xl"></i>
+                </button>
+            </div>
+              <!-- mobile responsive header -->
+          <nav class=" bg-slate-300 nav" style="display: none;">
+            <div class="flex flex-col items-center justify-center gap-5 py-10">
+            <a class="mr-5 text-gray-900">HOME</a>
+            <a class="mr-5 text-sky-400">SHOP</a>
+            <a class="mr-5 text-sky-400">MY ACCOUNT</a>
+            <a class="mr-5 text-sky-400">ABOUT</a>
+            <a class="mr-5 text-sky-400">CONTACT</a>
+            <a class="mr-5 text-sky-400"><b>$0.0</b> <i class="fa-solid fa-bag-shopping ml-3 relative"><span class="text-xs absolute -top-4 -right-4 text-black bg-sky-400 p-[5px] rounded-full">0</span></i></a>
+        </div>
+        </nav>
+        <!-- mobile responsive header -->
+        </header>
+        
+     
+
+        <section
+            class="h-full flex justify-center items-center my-10 w-full bg-[url('./img/background.jpg')] bg-no-repeat bg-center bg-cover">
+            <div class="container mx-auto  flex  items-center justify-center flex-col">
+                <div class="text-center flex items-center justify-center flex-col w-full h-full relative">
+                    <h1
+                        class="absolute sm:top-[10%] top-10 title-font md:text-[170px] sm:text-6xl text-4xl  font-bold text-sky-100 shadow-red-500/20">
+                        Airpro X3
+                    </h1>
+                    <img src="./img/main_shoes-removebg-preview.png" alt="shoes" class="sm:h-[650px] md:h-[900px] z-10">
+
+                    <button
+                        class="absolute bottom-0 md:bottom-20 rounded-full bg-white hover:bg-gray-950 py-5 px-10 font-sans text-xs font-bold uppercase text-black hover:text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-900/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none">
+                        <i class="fa-solid fa-arrow-right text-black hover:text-white"></i> SHOP COLLECTION
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class=" my-24">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                    <h2
+                        class="lg:text-8xl sm:5xl text-2xl text-gray-800 italic tracking-widest font-bold title-font mb-1">
+                        UNBELIEVABLE
+                    </h2>
+                    <h1 class="sm:text-2xl text-xl italic font-bold text-gray-800">SPEED. COMFORT.</h1>
+                </div>
+                <div class="swiper mySwiper w-full h-full">
+                    <div class="swiper-wrapper sm:gap-10">
+                        <div
+                            class="swiper-slide max-w-80 text-center text-sm flex flex-col justify-center items-center  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="max-w-md bg-gray-300">
+                                <a href="#">
+                                    <img class="rounded-t-lg" src="./img/main_shoes-removebg-preview.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="max-w-md border-2 w-full py-10 bg-gray-200">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Running Shoes</p>
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Airpro X3 Whole</h5>
+                                </a>
+                                <div class="flex justify-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                    <p>$60.00</p>
+                                    <p>$50.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div
+                            class="swiper-slide max-w-80 text-center text-sm flex flex-col justify-center items-center  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="max-w-md bg-gray-300">
+                                <a href="#">
+                                    <img class="rounded-t-lg" src="./img/main_shoes-removebg-preview.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="max-w-md border-2 w-full py-10 bg-gray-200">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Running Shoes</p>
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Airpro X3 Whole</h5>
+                                </a>
+                                <div class="flex justify-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                    <p>$60.00</p>
+                                    <p>$50.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div
+                            class="swiper-slide max-w-80 text-center text-sm flex flex-col justify-center items-center  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="max-w-md bg-gray-300">
+                                <a href="#">
+                                    <img class="rounded-t-lg" src="./img/main_shoes-removebg-preview.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="max-w-md border-2 w-full py-10 bg-gray-200">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Running Shoes</p>
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Airpro X3 Whole</h5>
+                                </a>
+                                <div class="flex justify-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                    <p>$60.00</p>
+                                    <p>$50.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div
+                            class="swiper-slide max-w-80 text-center text-sm flex flex-col justify-center items-center  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="max-w-md bg-gray-300">
+                                <a href="#">
+                                    <img class="rounded-t-lg" src="./img/main_shoes-removebg-preview.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="max-w-md border-2 w-full py-10 bg-gray-200">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Running Shoes</p>
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Airpro X3 Whole</h5>
+                                </a>
+                                <div class="flex justify-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                    <p>$60.00</p>
+                                    <p>$50.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div
+                            class="swiper-slide max-w-80 text-center text-sm flex flex-col justify-center items-center  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="max-w-md bg-gray-300">
+                                <a href="#">
+                                    <img class="rounded-t-lg" src="./img/main_shoes-removebg-preview.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="max-w-md border-2 w-full py-10 bg-gray-200">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Running Shoes</p>
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Airpro X3 Whole</h5>
+                                </a>
+                                <div class="flex justify-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                    <p>$60.00</p>
+                                    <p>$50.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div
+                            class="swiper-slide max-w-80 text-center text-sm flex flex-col justify-center items-center  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="max-w-md bg-gray-300">
+                                <a href="#">
+                                    <img class="rounded-t-lg" src="./img/main_shoes-removebg-preview.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="max-w-md border-2 w-full py-10 bg-gray-200">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Running Shoes</p>
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Airpro X3 Whole</h5>
+                                </a>
+                                <div class="flex justify-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                    <p>$60.00</p>
+                                    <p>$50.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div
+                            class="swiper-slide max-w-80 text-center text-sm flex flex-col justify-center items-center  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="max-w-md bg-gray-300">
+                                <a href="#">
+                                    <img class="rounded-t-lg" src="./img/main_shoes-removebg-preview.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="max-w-md border-2 w-full py-10 bg-gray-200">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Running Shoes</p>
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Airpro X3 Whole</h5>
+                                </a>
+                                <div class="flex justify-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                    <p>$60.00</p>
+                                    <p>$50.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div
+                            class="swiper-slide max-w-80 text-center text-sm flex flex-col justify-center items-center  bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <div class="max-w-md bg-gray-300">
+                                <a href="#">
+                                    <img class="rounded-t-lg" src="./img/main_shoes-removebg-preview.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="max-w-md border-2 w-full py-10 bg-gray-200">
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Running Shoes</p>
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Airpro X3 Whole</h5>
+                                </a>
+                                <div class="flex justify-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="flex justify-center gap-5">
+                                    <p>$60.00</p>
+                                    <p>$50.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-gray-300 body-font overflow-hidden">
+            <div class="container px-5 sm:py-24 mx-auto">
+                <div class="mx-auto flex flex-col sm:flex-row flex-wrap w-full sm:px-10">
+                    <div class="sm:w-[50%] w-full h-full">
+                        <!-- Swiper -->
+                        <div class="swiper nextswipper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/slider1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/slider2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/slider3.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/slider4.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/slider2.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/3.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/1.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    <div class="sm:w-[50%] w-full h-full sm:pl-10">
+                        <div class="flex flex-col justify-center items-start">
+                            <p class="text-3xl font-bold text-black sm:py-8">Limited Stock Available!</p>
+                            <h1 class="text-6xl font-bold text-black py-5">AirPro X2</h1>
+                            <p class="text-xl py-5">Consectetur adipiscing elit elit tellus, luctus nec ullamcorper
+                                mattis, pulvinar dapibus
+                                leo.​ Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button
+                                class="rounded-full bg-white hover:bg-gray-950 py-5 px-10 font-sans text-xs font-bold uppercase text-black hover:text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-900/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none">
+                                <i class="fa-solid fa-arrow-right text-black hover:text-white"></i>
+                                SHOP NOW
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center px-10 sm:py-20 py-5 sm:flex-row flex-col ">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <h1 class="relative text-9xl opacity-1 font-bold text-gray-50 flex justify-start items-center">01.
+                        <span class="absolute text-xl top-[50%] left-10 text-black z-10">Research</span>
+                    </h1>
+                    <p class="text-center text-md text-gray-600">Lorem ipsum dolor sit amet, consec tetur elit. Ut elit
+                        tellus, luctus nec ullam corper.</p>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <h1 class="relative text-9xl opacity-1 font-bold text-gray-50 flex justify-start items-center">02.
+                        <span class="absolute text-xl top-[50%] left-10 text-black z-10">Idea & Concept</span>
+                    </h1>
+                    <p class="text-center text-md text-gray-600">Lorem ipsum dolor sit amet, consec tetur elit. Ut elit
+                        tellus, luctus nec ullam corper.</p>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <h1 class="relative text-9xl opacity-1 font-bold text-gray-50 flex justify-start items-center">03.
+                        <span class="absolute text-xl top-[50%] left-10 text-black z-10">
+                            Design & Production</span>
+                    </h1>
+                    <p class="text-center text-md text-gray-600">Lorem ipsum dolor sit amet, consec tetur elit. Ut elit
+                        tellus, luctus nec ullam corper.</p>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                    <h1 class="relative text-9xl opacity-1 font-bold text-gray-50 flex justify-start items-center">04.
+                        <span class="absolute text-xl top-[50%] left-10 text-black z-10">Sales & Support​</span>
+                    </h1>
+                    <p class="text-center text-md text-gray-600 ">Lorem ipsum dolor sit amet, consec tetur elit. Ut elit
+                        tellus, luctus nec ullam corper.</p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="h-screen bg-fixed text-white flex justify-center items-center  w-full bg-[url('./img/cta-bg.jpg')] bg-no-repeat bg-center bg-cover opacity-0.5 backdrop-contrast-200">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12 justify-center items-center">
+
+                    <h1 class="sm:text-xl text-2xl font-medium title-font mb-4 text-white">
+                        Limited Stock Available!
+
+                    </h1>
+                    <h1 class="sm:text-3xl lg:text-6xl text-2xl font-bold title-font mb-4 text-white">AirPro X3.
+                        Turbocharged.
+                    </h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base md:py-10 py-5">Nam nec tellus a odio tincidunt
+                        auctor a
+                        ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu
+                        ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
+                    </p>
+                    <button
+                        class="rounded-full bg-white hover:bg-gray-950 py-5 px-10 font-sans text-xs font-bold uppercase text-black hover:text-white shadow-md shadow-red-500/20 transition-all hover:shadow-lg hover:shadow-red-900/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none">
+                        <i class="fa-solid fa-arrow-right text-black hover:text-white"></i>
+                        SHOP NOW
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-gray-600 body-fontc sm:py-10 py-20">
+            <div
+                class="container px-5 md:py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+                <div
+                    class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10 items-center justify-center">
+                    <a class="flex title-font font-medium items-center md:justify-start text-gray-900">
+                        <span class="text-xl font-bold">Follow Us</span>
+                    </a>
+                    <nav class="list-none mb-10 flex gap-5 py-5">
+                        <li class="bg-gray-200 px-2 py-1">
+                            <a class="text-gray-800 hover:text-gray-600"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li class="bg-gray-200 px-2 py-1">
+                            <a class="text-gray-600 hover:text-gray-800"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li class="bg-gray-200 px-2 py-1">
+                            <a class="text-gray-600 hover:text-gray-800"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li class="bg-gray-200 px-2 py-1">
+                            <a class="text-gray-600 hover:text-gray-800"><i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                    </nav>
+                </div>
+                <div
+                    class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center items-center justify-center order-first">
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-bold text-gray-700 tracking-widest text-xl mb-3">Categories</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Running Shoes</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Yoga Shoes</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Sports Shoes</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Casual Shoes</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-bold text-gray-700 tracking-widest text-xl mb-3">Business</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Company Profile</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Social Responsibility</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Brand Kit</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Media</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-bold text-gray-700 tracking-widest text-xl mb-3">About</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Board of Directors</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Company Profile</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Careers</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Numbers Speak</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                        <h2 class="title-font font-bold text-gray-700 tracking-widest text-xl mb-3">Useful Links</h2>
+                        <nav class="list-none mb-10">
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Return Policies</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Announcements</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Have issues?</a>
+                            </li>
+                            <li>
+                                <a class="text-gray-700 hover:text-gray-500">Media Kit</a>
+                            </li>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="container mx-auto  sm:px-20 p-0 flex flex-wrap flex-col sm:flex-row">
+                    <p class=" text-sm text-center sm:text-left">Copyright © 2024 Shoe Store |
+                        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-blue-300 ml-1"
+                            target="_blank">Credits</a>
+                    </p>
+                    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                        <p class="text-gray-500 text-sm text-center sm:text-left">Powered by Shoe Store</p>
+                    </span>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            watchSlidesProgress: true,
+            slidesPerView: 1,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper = new Swiper(".nextswipper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        function menuBar() {
+            var x = document.querySelector(".nav");
+            var btn1 = document.getElementById('btn1')
+            var btn2 = document.getElementById('btn2')
+
+            if (x.style.display === "block") {
+                btn1.style.display = 'block';
+                btn2.style.display = 'none';
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+                btn1.style.display = 'none';
+                btn2.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
